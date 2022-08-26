@@ -24,16 +24,16 @@ public class Part12Main {
 //        System.out.println("------------静态代理模式开始-----------------");
 //        redCircle.draw();
 //
-//        System.out.println("------------动态代理模式开始-----------------");
-//        DynamicProxy dp1 = new DynamicProxy(new Rectangle());
-//        dp1.draw();
-//        DynamicProxy dp2 = new DynamicProxy(new Circle());
-//        dp2.draw();
+        System.out.println("------------动态代理模式开始-----------------");
+        DynamicProxy dp1 = new DynamicProxy(new Rectangle());
+        dp1.draw();
+        DynamicProxy dp2 = new DynamicProxy(new Circle());
+        dp2.draw();
 
-        System.out.println("------------动态代理第二种动态创建对象的模式开始-----------------");
-        DynamicProxy2 dp21 = new  DynamicProxy2(new Rectangle());
-        dp21.draw();
-        DynamicProxy2 dp22 = new  DynamicProxy2(new Circle());
-        dp22.draw();
+//        System.out.println("------------动态代理第二种动态创建对象的模式开始-----------------");
+//        DynamicProxy2 dp21 = new  DynamicProxy2(Rectangle.class);
+//        dp21.draw();
+//        DynamicProxy2 dp22 = new  DynamicProxy2(Circle.class);
+//        dp22.draw();
     }
 }

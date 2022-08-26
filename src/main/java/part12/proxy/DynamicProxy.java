@@ -43,6 +43,14 @@ public class DynamicProxy implements InvocationHandler {
         System.out.println("-----给边界上色为红色-----");
     }
 
+    /**
+     * 这个方法在idea debug模式下会被调用多次，非debug模式只会执行一次。猜测跟idea有关系
+     * @param object
+     * @param method
+     * @param args
+     * @return
+     * @throws Throwable
+     */
     @Override
     public Object invoke(Object object, Method method, Object[] args) throws Throwable {
         System.out.println("\r\nMethod:" + method);

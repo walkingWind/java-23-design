@@ -11,7 +11,7 @@ package part3.single;
 public class SingleLazy {
 
     //私有静态变量（这里加入volatile保证线程安全）
-    private volatile  static SingleLazy singleLazy ;
+    private volatile static SingleLazy singleLazy ;
     //私有构造方法
     private SingleLazy(){}
 

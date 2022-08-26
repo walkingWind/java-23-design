@@ -14,9 +14,9 @@ import java.lang.reflect.Proxy;
  */
 public class DynamicProxy2 {
     private Shape shape;
-    private Object proxyObj;
+    private Class proxyObj;
 
-    public DynamicProxy2(Object o){
+    public DynamicProxy2(Class o){
         this.proxyObj = o;
     }
 
@@ -46,7 +46,7 @@ public class DynamicProxy2 {
     public Shape invokeShape() {
         Shape shape = null;
         try {
-            shape = (Shape)this.proxyObj.getClass().newInstance();
+            shape = (Shape)this.proxyObj.newInstance();
         } catch (InstantiationException e) {
             e.printStackTrace();
         } catch (IllegalAccessException e) {
